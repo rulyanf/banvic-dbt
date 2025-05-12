@@ -12,7 +12,7 @@ with
             , tipo_cliente
             , regexp_replace(cpfcnpj, '[^a-zA-Z0-9]', '') as cpfcnpj_cliente
             , cast(data_inclusao as timestamp) as ts_inclusao
-            , cast(data_nascimento as date) as data_nascimento_cleinte
+            , cast(data_nascimento as date) as data_nascimento_cliente
             , endereco as endereco_cliente
             , cep as cep_cliente
             , coalesce(

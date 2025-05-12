@@ -7,7 +7,7 @@ with
             , data_transacao
             , ts_transacao
             , nome_transacao
-            , tipo_trasacao
+            , tipo_transacao
             , valor_transacao
         from {{ ref('stg_erp__transacoes') }}
     )
@@ -40,7 +40,7 @@ with
             , transacoes.data_transacao
             , transacoes.ts_transacao
             , transacoes.nome_transacao
-            , transacoes.tipo_trasacao
+            , transacoes.tipo_transacao
             , transacoes.valor_transacao
         from transacoes
         left join contas on transacoes.fk_conta = contas.pk_conta

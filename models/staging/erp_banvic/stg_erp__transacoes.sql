@@ -16,7 +16,7 @@ with
                 when valor_transacao > 0 then 'Crédito'
                 when valor_transacao < 0 then 'Débito'
                 else null 
-            end as tipo_trasacao
+            end as tipo_transacao
             , cast(valor_transacao as numeric(28,2)) as valor_transacao
         from fonte_transacoes
     )
