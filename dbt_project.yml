@@ -35,10 +35,18 @@ models:
   my_new_project: # <-- Name of the project. If you renamed your project you have to change this as well
     staging:
       +materialized: view
+      +schema: staging
+      +tags: stg
+    
+    intermediate:
+      +materialized: view
+      +schema: int
+      +tags: int
     
     marts:
       +materialized: table
-
+      +schema: marts
+      +tags: marts
 
 seeds:
   my_new_project: # <-- Name of the project. If you renamed your project you have to change this as well
