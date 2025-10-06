@@ -5,7 +5,13 @@ sources:
     schema: erp_banvic
     tables:
       - name: localidades
-        description: Tabela fonte de localidades com informações de cidade e estado.
+        description: Tabela que registra as informações de cidade e estado.
 
       - name: clientes
-        description: Tabela fonte de clientes com informações pessoais de cada cliente da Banvic.
+        description: Tabela que armazena dados dos clientes, incluindo nome, e-mail, tipo de cliente, CPF/CNPJ, data de nascimento e endereço.
+      
+      - name: agencias
+        description: Tabela que contém informações sobre as agências, como nome, endereço, cidade, estado, tipo de agência e data de abertura.
+
+      - name: colaboradores
+        description: Tabela que contém dados dos colaboradores, como nome, e-mail, CPF, data de nascimento e endereço.

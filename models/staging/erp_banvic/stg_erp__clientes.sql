@@ -7,7 +7,7 @@ with
     , renomeado as (
         select
             cast(cod_cliente as int) as pk_cliente
-            , cast(cod_localicade as int) as fk_localidade
+            , cast(cod_localidade as int) as fk_localidade
             , primeiro_nome || ' ' || ultimo_nome as nome_cliente
             , email as email_cliente
             , tipo_cliente

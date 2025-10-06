@@ -6,7 +6,7 @@ with
 
     , renomeado as (
         select
-            cod_localicade as pk_localidade
+            cod_localidade as pk_localidade
             , cast(cidade as string) as cidade
             , cast(uf as string) as uf
         from fonte_localidades
