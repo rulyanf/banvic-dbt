@@ -1,0 +1,11 @@
+
+models:
+  - name: stg_erp__localidades
+    description: Modelo staging para os dados de localidades provenientes do ERP..
+    columns:
+      - name: pk_localidade
+        description: Chave primária da localidade, proveniente do campo cod_localidade no ERP.
+      - name: cidade
+        description: Nome da cidade da localidade, convertido para o tipo string.
+      - name: uf
+        description: Unidade Federativa (estado) associada à cidade, convertida para o tipo string.
