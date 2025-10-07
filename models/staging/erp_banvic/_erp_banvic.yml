@@ -6,12 +6,36 @@ sources:
     tables:
       - name: localidades
         description: Tabela que registra as informações de cidade e estado.
+        columns:
+          - name: cod_localidade
+            description: Chave primária da tabela localidades.
+            data_tests:
+              - unique
+              - not_null
 
       - name: clientes
         description: Tabela que armazena dados dos clientes, incluindo nome, e-mail, tipo de cliente, CPF/CNPJ, data de nascimento e endereço.
+        columns:
+          - name: cod_cliente
+            description: Chave primária da tabela clientes.
+            data_tests:
+              - unique 
+              - not_null
       
       - name: agencias
         description: Tabela que contém informações sobre as agências, como nome, endereço, cidade, estado, tipo de agência e data de abertura.
+        columns:
+          - name: cod_agencia
+            description: Chave primária da tabela agencias.
+            data_tests:
+              - unique 
+              - not_null
 
       - name: colaboradores
         description: Tabela que contém dados dos colaboradores, como nome, e-mail, CPF, data de nascimento e endereço.
+        columns:
+          - name: cod_colaborador
+            description: Chave primária da tabela colaboradores.
+            data_tests:
+              - unique 
+              - not_null
